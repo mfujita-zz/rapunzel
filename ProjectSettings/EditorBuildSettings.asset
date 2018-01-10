@@ -8,3 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: 6624a6c97ea41b24a88335ac05b2d755
+  - enabled: 1
+    path: Assets/Scenes/FugaInstrucao.unity
+    guid: 56129dcfc8be20242a37dc98dc3cf4ae
+  - enabled: 1
+    path: Assets/Scenes/FugaJogo.unity
+    guid: faa06d2802ceafb43a6d3d0ba7f8fb0b
+  - enabled: 1
+    path: Assets/Scenes/Transicao1_2.unity
+    guid: b4af38f7fd3c49844afcf04d63a16d28
