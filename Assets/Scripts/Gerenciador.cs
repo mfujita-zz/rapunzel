@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Gerenciador : MonoBehaviour 
 {
+	public GameObject quarto;
+
 	public void CarregaCena()
 	{
         Scene cena = SceneManager.GetActiveScene();
+
 
         if (cena.name.Equals ("Intro")) 
         {
@@ -17,5 +20,6 @@ public class Gerenciador : MonoBehaviour
         {
             SceneManager.LoadScene("FugaJogo");
 		}
+
 	}
 }
