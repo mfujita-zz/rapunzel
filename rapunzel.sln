@@ -18,6 +18,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
+<<<<<<< HEAD
 		Policies = $0
 		$0.TextStylePolicy = $1
 		$1.inheritsSet = VisualStudio
@@ -55,5 +56,8 @@ Global
 		$3.inheritsSet = VisualStudio
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
+=======
+		StartupItem = Assembly-CSharp.csproj
+>>>>>>> 7a1399831bba0678ebd3a4ac0479c1d965c94f9d
 	EndGlobalSection
 EndGlobal

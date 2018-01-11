@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Controle : MonoBehaviour
 {
@@ -102,5 +103,14 @@ public class Controle : MonoBehaviour
 			Destroy(espelho);
 			Debug.Log ("espelho");
         }
+
+		if (perfumeSemCor == null &&
+		    ursinhoSemCor == null &&
+		    oculosSemCor == null &&
+		    colarSemCor == null &&
+		    espelhoSemCor == null) 
+		{
+			SceneManager.LoadScene ("Transicao1_2");
+		}
     }
 }
