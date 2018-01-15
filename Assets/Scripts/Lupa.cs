@@ -9,7 +9,7 @@ public class Lupa : MonoBehaviour
 	private GameObject magnifyBorders;
 	private LineRenderer LeftBorder, RightBorder, TopBorder, BottomBorder; // Reference for lines of magnify glass borders
 	private float MGOX,MG0Y; // Magnify Glass Origin X and Y position
-	private float MGWidth = Screen.width/5f,MGHeight = Screen.width/5f; // Magnify glass width and height
+	private float MGWidth = Screen.width/6f,MGHeight = Screen.width/6f; // Magnify glass width and height
 	private Vector3 mousePos;
 
 	void Start ()
@@ -35,8 +35,8 @@ public class Lupa : MonoBehaviour
 		magnifyCamera = camera.AddComponent<Camera>();
 		magnifyCamera.pixelRect = new Rect(MGOX, MG0Y, MGWidth, MGHeight);
 		magnifyCamera.transform.position = new Vector3(0,0,0);
-		//if(Camera.main.isOrthoGraphic)
-		if (Camera.main.orthographic)
+		
+        if (Camera.main.orthographic) //if(Camera.main.isOrthoGraphic)
 		{
 			magnifyCamera.orthographic = true;
 			magnifyCamera.orthographicSize = Camera.main.orthographicSize / 5.0f;//+ 1.0f;
@@ -54,23 +54,23 @@ public class Lupa : MonoBehaviour
 	private void createBordersForMagniyGlass()
 	{
 		magnifyBorders = new GameObject ();
-		LeftBorder = getLine ();
-		LeftBorder.SetVertexCount(2);
+		LeftBorder = getLine ();		
+        LeftBorder.positionCount = 2; //LeftBorder.SetVertexCount(2);
 		LeftBorder.SetPosition(0,new Vector3(getWorldPosition(new Vector3(MGOX,MG0Y,0)).x,getWorldPosition(new Vector3(MGOX,MG0Y,0)).y-0.1f,-1));
 		LeftBorder.SetPosition(1,new Vector3(getWorldPosition(new Vector3(MGOX,MG0Y+MGHeight,0)).x,getWorldPosition(new Vector3(MGOX,MG0Y+MGHeight,0)).y+0.1f,-1));
 		LeftBorder.transform.parent = magnifyBorders.transform;
 		TopBorder = getLine ();
-		TopBorder.SetVertexCount(2);
+        TopBorder.positionCount = 2; // SetVertexCount(2);
 		TopBorder.SetPosition(0,new Vector3(getWorldPosition(new Vector3(MGOX,MG0Y+MGHeight,0)).x,getWorldPosition(new Vector3(MGOX,MG0Y+MGHeight,0)).y,-1));
 		TopBorder.SetPosition(1,new Vector3(getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y+MGHeight,0)).x,getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y+MGHeight,0)).y,-1));
 		TopBorder.transform.parent = magnifyBorders.transform;
 		RightBorder = getLine ();
-		RightBorder.SetVertexCount(2);
+        RightBorder.positionCount = 2; // SetVertexCount(2);
 		RightBorder.SetPosition(0,new Vector3(getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y+MGWidth,0)).x,getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y+MGWidth,0)).y+0.1f,-1));
 		RightBorder.SetPosition(1,new Vector3(getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y,0)).x,getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y,0)).y-0.1f,-1));
 		RightBorder.transform.parent = magnifyBorders.transform;
 		BottomBorder = getLine ();
-		BottomBorder.SetVertexCount(2);
+        BottomBorder.positionCount = 2; // SetVertexCount(2);
 		BottomBorder.SetPosition(0,new Vector3(getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y,0)).x,getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y,0)).y,-1));
 		BottomBorder.SetPosition(1,new Vector3(getWorldPosition(new Vector3(MGOX,MG0Y,0)).x,getWorldPosition(new Vector3(MGOX,MG0Y,0)).y,-1));
 		BottomBorder.transform.parent = magnifyBorders.transform;
