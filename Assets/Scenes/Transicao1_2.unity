@@ -188,7 +188,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 28867776}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 222339012}
+        m_MethodName: CarregaCena
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &28867776
@@ -224,6 +235,47 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 28867773}
+--- !u!1 &222339011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 222339013}
+  - component: {fileID: 222339012}
+  m_Layer: 0
+  m_Name: GerenciadorCena
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &222339012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 222339011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f606023859620ca449afc7bfca499d5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quarto: {fileID: 0}
+--- !u!4 &222339013
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 222339011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.7402115, y: -0.8108681, z: -0.093714565}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &250964984
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,8 +438,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 322575830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.6, y: -0.56, z: 0}
-  m_LocalScale: {x: 0.8180687, y: 0.8180686, z: 0.8180686}
+  m_LocalPosition: {x: -5.11, y: -1.12, z: 0}
+  m_LocalScale: {x: 1.0746026, y: 1.0746024, z: 1.0746024}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -403,7 +455,7 @@ GameObject:
   - component: {fileID: 343313434}
   - component: {fileID: 343313433}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TextAltotela
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -424,8 +476,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9.699997, y: -60.8}
-  m_SizeDelta: {x: -312.5, y: 107.5}
+  m_AnchoredPosition: {x: 4.8, y: -41.1}
+  m_SizeDelta: {x: -9.6, y: 68.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &343313433
 MonoBehaviour:
@@ -595,7 +647,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1126131103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.41, y: -0.9, z: 0}
+  m_LocalPosition: {x: 4.12, y: -0.9, z: 0}
   m_LocalScale: {x: 0.36088002, y: 0.36087996, z: 0.36087996}
   m_Children: []
   m_Father: {fileID: 0}
@@ -612,7 +664,7 @@ GameObject:
   - component: {fileID: 1444069889}
   - component: {fileID: 1444069888}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TextoBotao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -742,8 +794,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1732404113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.56, y: -0.56, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -19.05, y: -1.1, z: 0}
+  m_LocalScale: {x: 1, y: 1.3125001, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -843,3 +895,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quarto: {fileID: 322575830}
   sala: {fileID: 1732404113}
+  aviso: {fileID: 343313433}

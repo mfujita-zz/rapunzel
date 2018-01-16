@@ -11,15 +11,17 @@ public class Gerenciador : MonoBehaviour
 	{
         Scene cena = SceneManager.GetActiveScene();
 
-
-        if (cena.name.Equals ("Intro")) 
+        if (cena.name.Equals("Intro"))
         {
-			SceneManager.LoadScene ("FugaInstrucao");
-		} 
-		else if (cena.name.Equals ("FugaInstrucao")) 
+            SceneManager.LoadScene("FugaInstrucao");
+        }
+        else if (cena.name.Equals("FugaInstrucao"))
         {
             SceneManager.LoadScene("FugaJogo");
-		}
-
+        }
+        else if (cena.name.Equals("Transicao1_2"))
+        {
+            SceneManager.LoadScene("Lupa");
+        }
 	}
 }
