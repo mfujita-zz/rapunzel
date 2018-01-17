@@ -12,6 +12,11 @@ public class Lupa : MonoBehaviour
 	private float MGWidth = Screen.width/2f,MGHeight = Screen.width/2f; // Magnify glass width and height
 	private Vector3 mousePos;
 
+    private Vector3 mousePosition;
+    public float moveSpeed = 0.1f;
+
+    public GameObject LetraR;
+
 	void Start ()
 	{
 		createMagnifyGlass ();
@@ -25,6 +30,21 @@ public class Lupa : MonoBehaviour
 		magnifyCamera.transform.position = mousePos;
 		mousePos.z = 0;
 		magnifyBorders.transform.position = mousePos;
+
+
+        mousePosition = Input.mousePosition;
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+        transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
+
+        if (Input.GetMouseButtonDown(0) &&
+            (mousePos.x >= 3.3f && mousePos.y >= 0.6f) &&
+            (mousePos.x >= 3.3f && mousePos.y <= 1.0f) &&
+            (mousePos.x <= 3.7f && mousePos.y <= 0.6f) &&
+            (mousePos.x <= 3.7f && mousePos.y >= 1.0f))
+        {
+            print("Letra R");
+            Destroy(LetraR);
+        }
 	}
 
 	// Following method creates MagnifyGlass
