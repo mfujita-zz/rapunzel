@@ -9,11 +9,11 @@ public class Lupa : MonoBehaviour
 	private GameObject magnifyBorders;
 	private LineRenderer LeftBorder, RightBorder, TopBorder, BottomBorder; // Reference for lines of magnify glass borders
 	private float MGOX,MG0Y; // Magnify Glass Origin X and Y position
-	private float MGWidth = Screen.width/2f,MGHeight = Screen.width/2f; // Magnify glass width and height
+	private float MGWidth = Screen.width/5f,MGHeight = Screen.width/5f; // Magnify glass width and height
 	private Vector3 mousePos;
 
-    private Vector3 mousePosition;
-    public float moveSpeed = 0.1f;
+//    private Vector3 mousePosition;
+//    public float moveSpeed = 0.1f;
 
     public GameObject LetraR;
 
@@ -32,15 +32,17 @@ public class Lupa : MonoBehaviour
 		magnifyBorders.transform.position = mousePos;
 
 
-        mousePosition = Input.mousePosition;
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
+//        mousePosition = Input.mousePosition;
+//        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+//        transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
+
+
 
         if (Input.GetMouseButtonDown(0) &&
-            (mousePos.x >= 3.3f && mousePos.y >= 0.6f) &&
-            (mousePos.x >= 3.3f && mousePos.y <= 1.0f) &&
-            (mousePos.x <= 3.7f && mousePos.y <= 0.6f) &&
-            (mousePos.x <= 3.7f && mousePos.y >= 1.0f))
+            (magnifyCamera.transform.position.x >= 3.3f && magnifyCamera.transform.position.y >= 0.6f) &&
+            (magnifyCamera.transform.position.x >= 3.3f && magnifyCamera.transform.position.y <= 1.0f) &&
+            (magnifyCamera.transform.position.x <= 3.7f && magnifyCamera.transform.position.y <= 0.6f) &&
+            (magnifyCamera.transform.position.x <= 3.7f && magnifyCamera.transform.position.y >= 1.0f))
         {
             print("Letra R");
             Destroy(LetraR);
@@ -68,7 +70,6 @@ public class Lupa : MonoBehaviour
 			magnifyCamera.orthographic = false;
 			magnifyCamera.fieldOfView = Camera.main.fieldOfView / 10.0f;//3.0f;
 		}
-
 	}
 
 	// Following method sets border of MagnifyGlass
@@ -97,22 +98,22 @@ public class Lupa : MonoBehaviour
 //		BottomBorder.transform.parent = magnifyBorders.transform;
 
         magnifyBorders = new GameObject ();
-        LeftBorder = getLine ();        
+        LeftBorder = getLine ("Esquerda");
         LeftBorder.positionCount = 2; //LeftBorder.SetVertexCount(2);
         LeftBorder.SetPosition(0,new Vector3(getWorldPosition(new Vector3(MGOX,MG0Y,0)).x/2,(getWorldPosition(new Vector3(MGOX,MG0Y,0)).y-0.1f)/2,-1));
         LeftBorder.SetPosition(1,new Vector3(getWorldPosition(new Vector3(MGOX,MG0Y+MGHeight,0)).x/2,(getWorldPosition(new Vector3(MGOX,MG0Y+MGHeight,0)).y+0.1f)/2,-1));
         LeftBorder.transform.parent = magnifyBorders.transform;
-        TopBorder = getLine ();
+        TopBorder = getLine ("Topo");
         TopBorder.positionCount = 2; // SetVertexCount(2);
         TopBorder.SetPosition(0,new Vector3(getWorldPosition(new Vector3(MGOX,MG0Y+MGHeight,0)).x/2,(getWorldPosition(new Vector3(MGOX,MG0Y+MGHeight,0)).y)/2,-1));
         TopBorder.SetPosition(1,new Vector3(getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y+MGHeight,0)).x/2,(getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y+MGHeight,0)).y)/2,-1));
         TopBorder.transform.parent = magnifyBorders.transform;
-        RightBorder = getLine ();
+        RightBorder = getLine ("Direita");
         RightBorder.positionCount = 2; // SetVertexCount(2);
         RightBorder.SetPosition(0,new Vector3(getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y+MGWidth,0)).x/2,(getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y+MGWidth,0)).y)/2+0.1f,-1));
         RightBorder.SetPosition(1,new Vector3(getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y,0)).x/2,(getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y,0)).y)/2-0.1f,-1));
         RightBorder.transform.parent = magnifyBorders.transform;
-        BottomBorder = getLine ();
+        BottomBorder = getLine ("Baixo");
         BottomBorder.positionCount = 2; // SetVertexCount(2);
         BottomBorder.SetPosition(0,new Vector3(getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y,0)).x/2,(getWorldPosition(new Vector3(MGOX+MGWidth,MG0Y,0)).y)/2,-1));
         BottomBorder.SetPosition(1,new Vector3(getWorldPosition(new Vector3(MGOX,MG0Y,0)).x/2,(getWorldPosition(new Vector3(MGOX,MG0Y,0)).y)/2,-1));
@@ -120,9 +121,9 @@ public class Lupa : MonoBehaviour
 	}
 
 	// Following method creates new line for MagnifyGlass's border
-	private LineRenderer getLine()
+    private LineRenderer getLine(string nome)
 	{
-		LineRenderer line = new GameObject("Line").AddComponent<LineRenderer>();
+		LineRenderer line = new GameObject("Line" + nome).AddComponent<LineRenderer>();
 		line.material = new Material(Shader.Find("Diffuse"));
         line.positionCount = 2; // SetVertexCount(2);
         AnimationCurve aCurve = new AnimationCurve();
