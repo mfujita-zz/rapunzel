@@ -2,11 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Unhas.cs">
     <Files>
-      <File FileName="Assets\Scripts\Lupa.cs" Line="12" Column="67" />
+      <File FileName="Assets\Scripts\Unhas.cs" Line="27" Column="9" />
+      <File FileName="Assets\Scripts\Lupa.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Transicao1_2.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Gerenciador.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Controle.cs" Line="50" Column="10" />
-      <File FileName="Assets\Scripts\Unhas.cs" Line="132" Column="2" />
+      <File FileName="Assets\Scripts\Controle.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

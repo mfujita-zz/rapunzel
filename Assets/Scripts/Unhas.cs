@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Unhas : MonoBehaviour 
 {
@@ -18,12 +19,18 @@ public class Unhas : MonoBehaviour
     public GameObject esquerdaMedio;
     public GameObject esquerdaAnular;
     public GameObject esquerdaMinimo;
+
+    public Sprite rapunzel_unhas;
+
+    void Start()
+    {
+        Screen.width - rapunzel_unhas.bounds.size.x;
+    }
 	
 	void Update () 
-    {      
-
-        if (Input.GetMouseButton(1))
-        {
+    {   
+        if (Input.GetMouseButton(0))
+        {            
             mousePosition = Input.mousePosition;
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
             transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
@@ -36,22 +43,23 @@ public class Unhas : MonoBehaviour
                 transform.position = new Vector3(transform.position.x, -5f);
             if (transform.position.y > 4.9f)
                 transform.position = new Vector3(transform.position.x, 4.9f);
+            print(transform.position.x + " " + transform.position.y);
         }
 
-        if (Input.GetMouseButtonDown(0) &&
-            (transform.position.x > 1.7 && transform.position.y > -3.6) &&
-            (transform.position.x > 1.7 && transform.position.y < -2.7) &&
-            (transform.position.x < 1.9 && transform.position.y > -3.6) &&
-            (transform.position.x < 1.9 && transform.position.y < -2.7))
-        {
+        if (Input.GetMouseButton(0) &&
+            (transform.position.x > 1.4 && transform.position.y > -3.7) &&
+            (transform.position.x > 1.4 && transform.position.y < -2.7) &&
+            (transform.position.x < 1.8 && transform.position.y > -3.7) &&
+            (transform.position.x < 1.8 && transform.position.y < -2.7))
+        {            
             direitaMinimo.SetActive(true);
         }
 
         if (Input.GetMouseButtonDown(0) &&
-            (transform.position.x > 2.4 && transform.position.y > -4.2) &&
-            (transform.position.x > 2.4 && transform.position.y < -3.8) &&
-            (transform.position.x < 2.9 && transform.position.y > -4.2) &&
-            (transform.position.x < 2.9 && transform.position.y < -3.8))
+            (transform.position.x > 2.4 && transform.position.y > -4.3) &&
+            (transform.position.x > 2.4 && transform.position.y < -3.7) &&
+            (transform.position.x < 2.9 && transform.position.y > -4.3) &&
+            (transform.position.x < 2.9 && transform.position.y < -3.7))
         {
             direitaAnular.SetActive(true);
 
@@ -129,4 +137,6 @@ public class Unhas : MonoBehaviour
             esquerdaMinimo.SetActive(true);
         }
 	}
+
+    //private bool 
 }
