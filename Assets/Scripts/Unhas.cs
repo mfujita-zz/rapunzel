@@ -20,15 +20,25 @@ public class Unhas : MonoBehaviour
     public GameObject esquerdaAnular;
     public GameObject esquerdaMinimo;
 
-    public Sprite rapunzel_unhas;
+    public GameObject rapunzel_unhas;
 
     void Start()
     {
-        Screen.width - rapunzel_unhas.bounds.size.x;
+        direitaMinimo.transform.position = new Vector2(rapunzel_unhas.transform.position.x, rapunzel_unhas.transform.position.y);
+        direitaAnular.transform.position = new Vector2(rapunzel_unhas.transform.position.x, rapunzel_unhas.transform.position.y);
+        direitaMedio.transform.position = new Vector2(rapunzel_unhas.transform.position.x, rapunzel_unhas.transform.position.y);
+        direitaIndicador.transform.position = new Vector2(rapunzel_unhas.transform.position.x, rapunzel_unhas.transform.position.y);
+        direitaPolegar.transform.position = new Vector2(rapunzel_unhas.transform.position.x, rapunzel_unhas.transform.position.y);
+
+        esquerdaPolegar.transform.position = new Vector2(rapunzel_unhas.transform.position.x, rapunzel_unhas.transform.position.y);
+        esquerdaIndicador.transform.position = new Vector2(rapunzel_unhas.transform.position.x, rapunzel_unhas.transform.position.y);
+        esquerdaMedio.transform.position = new Vector2(rapunzel_unhas.transform.position.x, rapunzel_unhas.transform.position.y);
+        esquerdaAnular.transform.position = new Vector2(rapunzel_unhas.transform.position.x, rapunzel_unhas.transform.position.y);
+        esquerdaMinimo.transform.position = new Vector2(rapunzel_unhas.transform.position.x, rapunzel_unhas.transform.position.y);
     }
 	
 	void Update () 
-    {   
+    {  
         if (Input.GetMouseButton(0))
         {            
             mousePosition = Input.mousePosition;
@@ -86,8 +96,8 @@ public class Unhas : MonoBehaviour
         if (Input.GetMouseButtonDown(0) &&
             (transform.position.x > 5.5 && transform.position.y > -2.4) &&
             (transform.position.x > 5.5 && transform.position.y < -2.0) &&
-            (transform.position.x < 5.7 && transform.position.y > -2.4) &&
-            (transform.position.x < 5.7 && transform.position.y < -2.0))
+            (transform.position.x < 5.9 && transform.position.y > -2.4) &&
+            (transform.position.x < 5.9 && transform.position.y < -2.0))
         {
             direitaPolegar.SetActive(true);
         }
