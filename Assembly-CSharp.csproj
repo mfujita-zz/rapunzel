@@ -51,9 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BotaoCor.cs" />
      <Compile Include="Assets\Scripts\Controle.cs" />
      <Compile Include="Assets\Scripts\Gerenciador.cs" />
      <Compile Include="Assets\Scripts\Lupa.cs" />
+     <Compile Include="Assets\Scripts\MudancaCorUnhas.cs" />
+     <Compile Include="Assets\Scripts\Pincel.cs" />
      <Compile Include="Assets\Scripts\Transicao1_2.cs" />
      <Compile Include="Assets\Scripts\Unhas.cs" />
  <Reference Include="UnityEngine.UI">

@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
+using UnityEngine.UI;
+//using System;
 
 public class Unhas : MonoBehaviour 
 {
@@ -21,6 +22,8 @@ public class Unhas : MonoBehaviour
     public GameObject esquerdaMinimo;
 
     public GameObject rapunzel_unhas;
+    private List<GameObject> maos = new List<GameObject>();
+    public Text instrucao;
 
     void Start()
     {
@@ -35,10 +38,23 @@ public class Unhas : MonoBehaviour
         esquerdaMedio.transform.position = new Vector2(rapunzel_unhas.transform.position.x, rapunzel_unhas.transform.position.y);
         esquerdaAnular.transform.position = new Vector2(rapunzel_unhas.transform.position.x, rapunzel_unhas.transform.position.y);
         esquerdaMinimo.transform.position = new Vector2(rapunzel_unhas.transform.position.x, rapunzel_unhas.transform.position.y);
+
+        maos.Add(direitaMinimo);
+        maos.Add(direitaAnular);
+        maos.Add(direitaMedio);
+        maos.Add(direitaIndicador);
+        maos.Add(direitaPolegar);
+        maos.Add(esquerdaPolegar);
+        maos.Add(esquerdaIndicador);
+        maos.Add(esquerdaMedio);
+        maos.Add(esquerdaAnular);
+        maos.Add(esquerdaMinimo);
     }
 	
 	void Update () 
     {  
+        int unhasLixadas = 0;
+
         if (Input.GetMouseButton(0))
         {            
             mousePosition = Input.mousePosition;
@@ -72,7 +88,6 @@ public class Unhas : MonoBehaviour
             (transform.position.x < 2.9 && transform.position.y < -3.7))
         {
             direitaAnular.SetActive(true);
-
         }
 
         if (Input.GetMouseButtonDown(0) &&
@@ -146,7 +161,18 @@ public class Unhas : MonoBehaviour
         {
             esquerdaMinimo.SetActive(true);
         }
-	}
 
-    //private bool 
+        foreach (var item in maos) 
+        {
+            if (item.activeInHierarchy)
+            {
+                unhasLixadas++;
+            }
+        }
+
+        if (unhasLixadas == 10)
+        {
+            instrucao.text = "Escolha a cor e pinte as unhas.";
+        }
+	}
 }
