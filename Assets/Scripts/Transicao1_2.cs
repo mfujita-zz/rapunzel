@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Transicao1_2 : MonoBehaviour 
 {
 	public GameObject quarto;
-    public GameObject sala;
+    public GameObject salao;
     public Text aviso;
 
 	void Start () 
@@ -27,11 +27,17 @@ public class Transicao1_2 : MonoBehaviour
 
         if (quarto == null)
         {
-            aviso.text = "Ache os objetos com a lente de aumento.";
-            sala.transform.Translate(Vector3.right * 0.05f);
-            if (sala.transform.position.x > -5.91f)
+//            aviso.text = "Ache os objetos com a lente de aumento.";
+//            sala.transform.Translate(Vector3.right * 0.05f);
+//            if (sala.transform.position.x > -5.91f)
+//            {
+//                sala.transform.position = new Vector3(-5.91f, -1.1f, 0);
+//            }
+            aviso.text = "Hora de cuidar da beleza da Rapunzel.";
+            salao.transform.Translate(Vector3.right * 0.05f);
+            if (salao.transform.position.x > -5.91f)
             {
-                sala.transform.position = new Vector3(-5.91f, -1.1f, 0);
+                salao.transform.position = new Vector3(-5.91f, -1.1f, 0);
             }
         }
 	}

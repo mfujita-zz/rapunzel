@@ -21,7 +21,7 @@ public class Gerenciador : MonoBehaviour
         }
         else if (cena.name.Equals("Transicao1_2"))
         {
-            SceneManager.LoadScene("Lupa");
+            SceneManager.LoadScene("RapunzelUnhas");
         }
 	}
 }

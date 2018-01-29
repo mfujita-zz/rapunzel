@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Transicao1_2.unity
     guid: b4af38f7fd3c49844afcf04d63a16d28
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Lupa.unity
     guid: f44949f14eae0d94f96d46a7f3870fae
+  - enabled: 1
+    path: Assets/Scenes/RapunzelUnhas.unity
+    guid: c46439319605cff4bb2386fe2ac88ebe

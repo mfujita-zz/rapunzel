@@ -137,7 +137,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 22885394}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -184.5, y: -67.5, z: 0}
+  m_LocalPosition: {x: -181.5, y: -67.5, z: 0}
   m_LocalScale: {x: 1.390585, y: 1.390585, z: 1.390585}
   m_Children: []
   m_Father: {fileID: 547410555}
@@ -510,7 +510,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 191708071}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -324.5, y: -67.5, z: 0}
+  m_LocalPosition: {x: -321.5, y: -67.5, z: 0}
   m_LocalScale: {x: 1.3907106, y: 1.3907106, z: 1.3907106}
   m_Children: []
   m_Father: {fileID: 547410555}
@@ -1072,7 +1072,7 @@ GameObject:
   - component: {fileID: 799608669}
   - component: {fileID: 799608668}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ProximaFase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1085,7 +1085,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 799608666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -200.5, y: -137.5, z: 0}
+  m_LocalPosition: {x: -197.5, y: -137.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1439108276}
@@ -1514,7 +1514,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1064098183}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -254.5, y: -67.5, z: 0}
+  m_LocalPosition: {x: -251.5, y: -67.5, z: 0}
   m_LocalScale: {x: 1.390585, y: 1.390585, z: 1.390585}
   m_Children: []
   m_Father: {fileID: 547410555}
@@ -2341,7 +2341,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1512197953}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -225.70001, y: 139.5, z: 0}
+  m_LocalPosition: {x: -87.70001, y: 104, z: 0}
   m_LocalScale: {x: 1.4603169, y: 1.4603168, z: 1.4603168}
   m_Children: []
   m_Father: {fileID: 547410555}
@@ -2349,8 +2349,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 148.8, y: -28}
-  m_SizeDelta: {x: 186.3, y: 30}
+  m_AnchoredPosition: {x: 283.8, y: -63.5}
+  m_SizeDelta: {x: 371.2, y: 78.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1512197955
 MonoBehaviour:
@@ -2489,6 +2489,12 @@ MonoBehaviour:
   esquerdaMinimo: {fileID: 842721527}
   rapunzel_unhas: {fileID: 672257216}
   instrucao: {fileID: 1512197955}
+  pincel: {fileID: 101540994}
+  esmalteVermelho: {fileID: 191708071}
+  esmalteRosa: {fileID: 1064098183}
+  esmalteRoxo: {fileID: 22885394}
+  esmalteCoco: {fileID: 2093627724}
+  proximaFase: {fileID: 799608666}
 --- !u!1001 &1847117222
 Prefab:
   m_ObjectHideFlags: 0
@@ -2706,7 +2712,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2093627724}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -114.5, y: -67.5, z: 0}
+  m_LocalPosition: {x: -111.5, y: -67.5, z: 0}
   m_LocalScale: {x: 1.390585, y: 1.390585, z: 1.390585}
   m_Children: []
   m_Father: {fileID: 547410555}

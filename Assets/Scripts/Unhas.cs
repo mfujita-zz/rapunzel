@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//using System;
 
 public class Unhas : MonoBehaviour 
 {
@@ -24,6 +23,14 @@ public class Unhas : MonoBehaviour
     public GameObject rapunzel_unhas;
     private List<GameObject> maos = new List<GameObject>();
     public Text instrucao;
+
+    public GameObject pincel;
+    public GameObject esmalteVermelho;
+    public GameObject esmalteRosa;
+    public GameObject esmalteRoxo;
+    public GameObject esmalteCoco;
+
+    public GameObject proximaFase;
 
     void Start()
     {
@@ -172,7 +179,14 @@ public class Unhas : MonoBehaviour
 
         if (unhasLixadas == 10)
         {
-            instrucao.text = "Escolha a cor e pinte as unhas.";
+            instrucao.text = "Escolha a cor e pinte as unhas.\r\nClique em \"Estou pronta!\" quando terminar de pintar as unhas.";
+            gameObject.SetActive(false);
+            pincel.SetActive(true);
+            esmalteVermelho.gameObject.SetActive(true);
+            esmalteRosa.gameObject.SetActive(true);
+            esmalteRoxo.gameObject.SetActive(true);
+            esmalteCoco.gameObject.SetActive(true);
+            proximaFase.gameObject.SetActive(true);
         }
 	}
 }
