@@ -1,11 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Gerenciador.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Cenario.cs">
     <Files>
+      <File FileName="Assets\Scripts\Cenario.cs" Line="18" Column="50" />
       <File FileName="Assets\Scripts\Unhas.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Transicao1_2.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Gerenciador.cs" Line="24" Column="50" />
-      <File FileName="Assets\Scripts\Controle.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Controle.cs" Line="9" Column="4" />
       <File FileName="Assets\Scripts\MudancaCorUnhas.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Pincel.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\BotaoCor.cs" Line="1" Column="1" />

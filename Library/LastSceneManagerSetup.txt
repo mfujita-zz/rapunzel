@@ -1,1 +1,4 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/Scenes/Floresta.unity
+  isLoaded: 1
+  isActive: 1

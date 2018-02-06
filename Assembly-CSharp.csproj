@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BotaoCor.cs" />
+     <Compile Include="Assets\Scripts\Cenario.cs" />
      <Compile Include="Assets\Scripts\Controle.cs" />
      <Compile Include="Assets\Scripts\Gerenciador.cs" />
      <Compile Include="Assets\Scripts\Lupa.cs" />
