@@ -24,8 +24,8 @@ public class Lupa : MonoBehaviour
 	void Update ()
 	{
 		// Following lines set the camera's pixelRect and camera position at mouse position
-		//magnifyCamera.pixelRect = new Rect (Input.mousePosition.x - MGWidth / 2.0f, Input.mousePosition.y - MGHeight / 2.0f, MGWidth, MGHeight);
-        magnifyCamera.pixelRect = new Rect (Input.mousePosition.x - MGWidth / 4.0f, Input.mousePosition.y - MGHeight / 4.0f, MGWidth/2, MGHeight/2);
+		magnifyCamera.pixelRect = new Rect (Input.mousePosition.x - MGWidth / 2.0f, Input.mousePosition.y - MGHeight / 2.0f, MGWidth, MGHeight);
+        //magnifyCamera.pixelRect = new Rect (Input.mousePosition.x - MGWidth / 4.0f, Input.mousePosition.y - MGHeight / 4.0f, MGWidth/2, MGHeight/2);
 		mousePos = getWorldPosition (Input.mousePosition);
 		magnifyCamera.transform.position = mousePos;
 		mousePos.z = 0;

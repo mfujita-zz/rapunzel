@@ -9,15 +9,20 @@ public class Transicao1_2 : MonoBehaviour
     public GameObject salao;
     public Text aviso;
 
-	void Start () 
+    void Start()
+    {
+        StartCoroutine(Aguarda1s());
+    }
+
+    IEnumerator Aguarda1s() 
 	{
-		
+        yield return new WaitForSeconds(1f);
 	}
 
 	void Update () 
 	{
 		if (quarto != null) 
-		{
+		{            
 			quarto.transform.Translate (Vector3.left * 0.05f);
 			if (quarto.transform.position.x < -18f) 
 			{
