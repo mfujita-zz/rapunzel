@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\CenarioMontanha.cs" />
      <Compile Include="Assets\Scripts\Controle.cs" />
      <Compile Include="Assets\Scripts\Gerenciador.cs" />
+     <Compile Include="Assets\Scripts\IluminacaoMontanha.cs" />
      <Compile Include="Assets\Scripts\Lupa.cs" />
      <Compile Include="Assets\Scripts\MudancaCorUnhas.cs" />
      <Compile Include="Assets\Scripts\Pincel.cs" />
