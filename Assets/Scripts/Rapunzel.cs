@@ -7,12 +7,13 @@ public class Rapunzel : MonoBehaviour
     public float speed = 6.0F;
     public Rigidbody2D rb;
     public bool podePular;
-    GameObject desabilitaScript;
+
+    public GameObject[] desabilitaScriptCenarios;
 
 	void Start () 
     {
         podePular = true;
-        desabilitaScript = GameObject.Find("Cenario");
+        //desabilitaScript = GameObject.Find("Cenario");
 	}	
 
 	void Update () 
@@ -56,9 +57,9 @@ public class Rapunzel : MonoBehaviour
             podePular = true;
         }
 
-        if (jogador.gameObject.name.Contains("rato"))
+        if (jogador.gameObject.name.Contains("rato") || jogador.gameObject.name.Contains("bruxa") || jogador.gameObject.name.Contains("fogo"))
         {
-            desabilitaScript.GetComponent<Cenario>().enabled = false;
+            Time.timeScale = 0f;
         }
     }
 }

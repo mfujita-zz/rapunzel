@@ -11,6 +11,9 @@ public class CenarioMontanha : MonoBehaviour
 	
 	void Update ()
     {
+        if (Time.timeScale == 0)
+            return;
+        
         transform.Translate(Vector3.left * .01f);
         if (transform.position.x < -20f)
         {

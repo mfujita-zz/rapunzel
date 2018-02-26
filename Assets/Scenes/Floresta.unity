@@ -204,8 +204,8 @@ Transform:
   m_PrefabInternal: {fileID: 2057580872}
   m_GameObject: {fileID: 420284299}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.37, y: -2.99, z: 0}
-  m_LocalScale: {x: 0.5441608, y: 0.5441608, z: 0.5441608}
+  m_LocalPosition: {x: -9.7, y: -3.17, z: 0}
+  m_LocalScale: {x: 0.48298275, y: 0.48298275, z: 0.48298275}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -225,6 +225,13 @@ MonoBehaviour:
   speed: 6
   rb: {fileID: 420284305}
   podePular: 0
+  desabilitaScriptCenarios:
+  - {fileID: 1909370726}
+  - {fileID: 540109481}
+  - {fileID: 1308441215}
+  - {fileID: 928488845}
+  - {fileID: 1438031912}
+  - {fileID: 1656926978}
 --- !u!61 &420284304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -566,9 +573,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9418cd23e98b24dab2c21a611df9df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plataforma: {fileID: 4548439149283270, guid: 2056898676114fc488b88511baf80eab, type: 2}
-  rato: {fileID: 4394094114527598, guid: 3234c61012a3070458e1970e8fa1b939, type: 2}
-  bruxa: {fileID: 4897692522087840, guid: 51b9351a76bc8a24ba29ae460c608508, type: 2}
+  plataforma: {fileID: 1034827391744924, guid: 2056898676114fc488b88511baf80eab, type: 2}
+  rato: {fileID: 1371793617519920, guid: 3234c61012a3070458e1970e8fa1b939, type: 2}
+  fogo: {fileID: 1117465282870464, guid: 4d8f5fc999bd32a4dba3c5467bfbea74, type: 2}
+  bruxa: {fileID: 1769235771328560, guid: 51b9351a76bc8a24ba29ae460c608508, type: 2}
 --- !u!4 &1005164399
 Transform:
   m_ObjectHideFlags: 0
@@ -646,7 +654,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -1025,13 +1032,18 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114569235541716932, guid: 5e6ba52173eaaf64f8ea40c922fc0e68,
+        type: 2}
+      propertyPath: desabilitaScriptCenarios.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4954672251555500, guid: 5e6ba52173eaaf64f8ea40c922fc0e68, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -10.37
+      value: -9.7
       objectReference: {fileID: 0}
     - target: {fileID: 4954672251555500, guid: 5e6ba52173eaaf64f8ea40c922fc0e68, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.99
+      value: -3.17
       objectReference: {fileID: 0}
     - target: {fileID: 4954672251555500, guid: 5e6ba52173eaaf64f8ea40c922fc0e68, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1079,21 +1091,51 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4954672251555500, guid: 5e6ba52173eaaf64f8ea40c922fc0e68, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.5441608
+      value: 0.48298275
       objectReference: {fileID: 0}
     - target: {fileID: 4954672251555500, guid: 5e6ba52173eaaf64f8ea40c922fc0e68, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.5441608
+      value: 0.48298275
       objectReference: {fileID: 0}
     - target: {fileID: 4954672251555500, guid: 5e6ba52173eaaf64f8ea40c922fc0e68, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.5441608
+      value: 0.48298275
       objectReference: {fileID: 0}
     - target: {fileID: 212308418792505666, guid: 5e6ba52173eaaf64f8ea40c922fc0e68,
         type: 2}
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114569235541716932, guid: 5e6ba52173eaaf64f8ea40c922fc0e68,
+        type: 2}
+      propertyPath: desabilitaScriptCenarios.Array.data[0]
+      value: 
+      objectReference: {fileID: 1909370726}
+    - target: {fileID: 114569235541716932, guid: 5e6ba52173eaaf64f8ea40c922fc0e68,
+        type: 2}
+      propertyPath: desabilitaScriptCenarios.Array.data[1]
+      value: 
+      objectReference: {fileID: 540109481}
+    - target: {fileID: 114569235541716932, guid: 5e6ba52173eaaf64f8ea40c922fc0e68,
+        type: 2}
+      propertyPath: desabilitaScriptCenarios.Array.data[2]
+      value: 
+      objectReference: {fileID: 1308441215}
+    - target: {fileID: 114569235541716932, guid: 5e6ba52173eaaf64f8ea40c922fc0e68,
+        type: 2}
+      propertyPath: desabilitaScriptCenarios.Array.data[3]
+      value: 
+      objectReference: {fileID: 928488845}
+    - target: {fileID: 114569235541716932, guid: 5e6ba52173eaaf64f8ea40c922fc0e68,
+        type: 2}
+      propertyPath: desabilitaScriptCenarios.Array.data[4]
+      value: 
+      objectReference: {fileID: 1438031912}
+    - target: {fileID: 114569235541716932, guid: 5e6ba52173eaaf64f8ea40c922fc0e68,
+        type: 2}
+      propertyPath: desabilitaScriptCenarios.Array.data[5]
+      value: 
+      objectReference: {fileID: 1656926978}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e6ba52173eaaf64f8ea40c922fc0e68, type: 2}
   m_IsPrefabParent: 0
