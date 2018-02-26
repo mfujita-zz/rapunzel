@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Rato.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlataformaInimigos.cs">
     <Files>
       <File FileName="Assets\Scripts\Rapunzel.cs" Line="59" Column="45" />
       <File FileName="Assets\Scripts\Cenario.cs" Line="15" Column="50" />
-      <File FileName="Assets\Scripts\PlataformaInimigos.cs" Line="13" Column="77" />
-      <File FileName="Assets\Scripts\Plataforma.cs" Line="10" Column="39" />
-      <File FileName="Assets\Scripts\Rato.cs" Line="10" Column="39" />
+      <File FileName="Assets\Scripts\Plataforma.cs" Line="12" Column="33" />
+      <File FileName="Assets\Scripts\PlataformaInimigos.cs" Line="19" Column="15" />
+      <File FileName="Assets\Scripts\InimigoMovimento.cs" Line="15" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
