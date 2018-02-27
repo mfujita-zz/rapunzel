@@ -16,15 +16,25 @@ public class InimigoMovimento : MonoBehaviour
     {
         transform.Translate(Vector3.left * 0.05f);
 
-        if (transform.position.x < -15f)
-        {      
-            System.Random r = new System.Random();
-            int num = r.Next(0, 3);  //PlataformaInimigos.indice;
-            Debug.Log("Sorteado: " + num);
-            PlataformaInimigos.liberaInimigos.Add(true);
-            script.InstanciaPlataformaInimigos(num);
-            PlataformaInimigos.indice++;
-            Destroy(gameObject);
-        }
+//        if (transform.position.x < -12f)
+//        {      
+//            System.Random r = new System.Random();
+////            int num = r.Next(0, 3);  //PlataformaInimigos.indice;
+////            Debug.Log("Sorteado: " + num);
+////            PlataformaInimigos.liberaInimigos.Add(true);
+////            script.InstanciaPlataformaInimigos(num);
+////            PlataformaInimigos.indice++;
+//            script.InstanciaPlataformaInimigos();
+//            Destroy(gameObject);
+//        }
 	}
+
+    private void Destruir(GameObject objeto)
+    {
+        Destroy(objeto, 5f);
+        if (transform.position.x < -12)
+        {
+            DestroyImmediate(objeto);
+        }
+    }
 }
