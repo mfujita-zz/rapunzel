@@ -21,4 +21,9 @@ public class Cenario : MonoBehaviour
             transform.position = new Vector3(18.7f, transform.position.y, transform.position.z);
         }
 	}
+
+    public void RemoveCenario()
+    {
+        //Remover cenário para dar lugar para a casa da Rapunzel    
+    }
 }

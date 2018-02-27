@@ -9,7 +9,7 @@ public class Plataforma : MonoBehaviour
         if (Time.timeScale == 0)
             return;
         
-        transform.Translate(Vector3.left * 0.05f);
+        transform.Translate(Vector3.left * 0.06f);
         if (transform.position.x < -12f)
         {
             Destroy(gameObject);
