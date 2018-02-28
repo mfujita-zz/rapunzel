@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4492858707162550}
   - component: {fileID: 212425221095711542}
   - component: {fileID: 95181503597123246}
-  - component: {fileID: 61454869197634056}
   - component: {fileID: 114580153378675538}
+  - component: {fileID: 60928792592507002}
   m_Layer: 0
   m_Name: fogo
   m_TagString: Untagged
@@ -37,14 +37,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1117465282870464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.71, y: 0.4, z: 0}
+  m_LocalPosition: {x: 120, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61454869197634056
-BoxCollider2D:
+--- !u!60 &60928792592507002
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -65,9 +65,48 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.07, y: 2.01}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.53499997, y: -0.385}
+      - {x: 0.525, y: -0.385}
+      - {x: 0.49499997, y: -0.39499998}
+      - {x: 0.405, y: -0.515}
+      - {x: 0.24499999, y: -0.445}
+      - {x: 0.235, y: -0.275}
+      - {x: 0.345, y: -0.195}
+      - {x: 0.48499998, y: -0.015}
+      - {x: 0.525, y: 0.13499999}
+      - {x: 0.49499997, y: 0.39499998}
+      - {x: 0.39499998, y: 0.53499997}
+      - {x: 0.325, y: 0.585}
+      - {x: 0.125, y: 0.585}
+      - {x: 0.114999995, y: 0.565}
+      - {x: 0.085, y: 0.33499998}
+      - {x: 0.005, y: 0.125}
+      - {x: -0.085, y: 0.035}
+      - {x: -0.375, y: 0.005}
+      - {x: -0.435, y: -0.015}
+      - {x: -0.505, y: -0.044999998}
+      - {x: -0.53499997, y: -0.085}
+      - {x: -0.53499997, y: -0.305}
+      - {x: -0.505, y: -0.36499998}
+      - {x: -0.415, y: -0.435}
+      - {x: -0.33499998, y: -0.475}
+      - {x: -0.42499998, y: -0.66499996}
+      - {x: -0.385, y: -0.815}
+      - {x: -0.33499998, y: -0.865}
+      - {x: -0.235, y: -0.91499996}
+      - {x: 0.055, y: -0.965}
+      - {x: 0.074999996, y: -0.995}
+      - {x: 0.285, y: -0.995}
+      - {x: 0.345, y: -0.945}
+      - {x: 0.475, y: -0.805}
+      - {x: 0.53499997, y: -0.655}
+    - - {x: -0.45499998, y: -0.445}
+      - {x: -0.42499998, y: -0.435}
+      - {x: -0.42499998, y: -0.405}
+      - {x: -0.45499998, y: -0.39499998}
+      - {x: -0.475, y: -0.415}
 --- !u!95 &95181503597123246
 Animator:
   serializedVersion: 3
@@ -100,6 +139,7 @@ MonoBehaviour:
   rato: {fileID: 1371793617519920, guid: 3234c61012a3070458e1970e8fa1b939, type: 2}
   fogo: {fileID: 1117465282870464}
   bruxa: {fileID: 1769235771328560, guid: 51b9351a76bc8a24ba29ae460c608508, type: 2}
+  bruxa10: {fileID: 0}
 --- !u!212 &212425221095711542
 SpriteRenderer:
   m_ObjectHideFlags: 1

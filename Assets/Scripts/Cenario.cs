@@ -5,11 +5,11 @@ using UnityEngine;
 public class Cenario : MonoBehaviour 
 {
     public Transform casaFloresta;
-    public static bool destinoAlcancado;
+    public static bool destinoAlcancado = false;
 	
 	void Start () 
     {
-        destinoAlcancado = false;
+        
 	}	
 	
 	void Update () 
@@ -20,27 +20,20 @@ public class Cenario : MonoBehaviour
         }
 
         transform.Translate(Vector3.left * .05f);
-        //if (transform.position.x < -20f && Time.timeScale != 0)
-        //if (destinoAlcancado == false)
         if (transform.position.x < -20f && !destinoAlcancado)
         {
             transform.position = new Vector3(18.7f, transform.position.y, transform.position.z);
         }
 
-        //if (Time.timeScale == 0)
+
         if (destinoAlcancado)
         {
             transform.Translate(Vector3.left * .05f);
             casaFloresta.Translate(Vector3.left * .05f);
-            if (casaFloresta.transform.position.x < 7.5f)
+            if (casaFloresta.transform.position.x < 3.35f)
             {
-                casaFloresta.position = new Vector3(7.5f, transform.position.y, transform.position.z);
+                casaFloresta.position = new Vector3(3.35f, transform.position.y, transform.position.z);
             }
         }
 	}
-
-    public void RemoveCenario()
-    {
-        //Remover cenário para dar lugar para a casa da Rapunzel    
-    }
 }
