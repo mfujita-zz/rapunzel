@@ -10,10 +10,12 @@ public class InimigoMovimento : MonoBehaviour
     public GameObject rato;
     public GameObject fogo;
     public GameObject bruxa;
+    public GameObject bruxa10;
 
     void Start()
     {
         //script = GameObject.Find("criador").GetComponent<PlataformaInimigos>();
+        bruxa10 = GameObject.FindWithTag("bruxa10");
     }
 
 	void Update () 
@@ -28,11 +30,12 @@ public class InimigoMovimento : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (gameObject.name.Contains("bruxa10") == null)
+        if (bruxa10 == null)
         {            
-            Time.timeScale = 0;
-
+            //            Time.timeScale = 0;
+            Cenario.destinoAlcancado = true;
         }
+        Debug.Log("Bruxa: " + Cenario.destinoAlcancado);
 	}
 }
 

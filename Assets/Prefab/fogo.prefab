@@ -96,6 +96,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad20584dfe6ea044ca30abed4c88e6bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  plataforma: {fileID: 1034827391744924, guid: 2056898676114fc488b88511baf80eab, type: 2}
+  rato: {fileID: 1371793617519920, guid: 3234c61012a3070458e1970e8fa1b939, type: 2}
+  fogo: {fileID: 1117465282870464}
+  bruxa: {fileID: 1769235771328560, guid: 51b9351a76bc8a24ba29ae460c608508, type: 2}
 --- !u!212 &212425221095711542
 SpriteRenderer:
   m_ObjectHideFlags: 1
