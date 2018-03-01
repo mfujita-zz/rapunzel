@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Rapunzel : MonoBehaviour 
 {
@@ -36,14 +37,17 @@ public class Rapunzel : MonoBehaviour
             }
         }
 
-        if (Cenario.destinoAlcancado)
-        {
-            transform.Translate(Vector3.left * 0.4f);
-            if (transform.position.x < -9.5f)
-            {
-                transform.position = new Vector3(-9.5f, transform.position.y, transform.position.z);
-            }
-        }
+        //if (Cenario.destinoAlcancado)
+//        if (destinoAlcancado)
+//        {
+//            transform.Translate(Vector3.left);
+//            if (transform.position.x <= -9.5f)
+//            {
+//                
+//                //if (transform.position.x == -9.5f)
+//                    destinoAlcancado = false;
+//            }
+//        }
 	}
 
     void FixedUpdate()
@@ -57,19 +61,24 @@ public class Rapunzel : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D jogador)
     { 
-        if (jogador.gameObject.name.Equals("rodape") || jogador.gameObject.name.Contains("plataforma"))
+        if (jogador.gameObject.name.Equals("Chao") || jogador.gameObject.name.Contains("plataforma"))
         {
             podePular = true;
         }
-
-//        if ()
-//        {
-//            podePular = true;
-//        }
 
         if (jogador.gameObject.name.Contains("rato") || jogador.gameObject.name.Contains("bruxa") || jogador.gameObject.name.Contains("fogo"))
         {
             Time.timeScale = 0f;
         }
+
+        if (jogador.gameObject.name.Equals("casaFloresta"))
+        {
+            SceneManager.LoadScene("Final");
+        }
+    }
+
+    public void ReposionaAoTerminarTrajeto()
+    {
+        transform.position = new Vector3(-9.5f, transform.position.y, transform.position.z);
     }
 }

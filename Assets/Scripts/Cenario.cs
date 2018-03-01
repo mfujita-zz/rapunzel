@@ -34,9 +34,9 @@ public class Cenario : MonoBehaviour
             }
 
             casaFloresta.Translate(Vector3.left * .05f);
-            if (casaFloresta.transform.position.x < 2f)
+            if (casaFloresta.transform.position.x < 0f)
             {
-                casaFloresta.position = new Vector3(2f, transform.position.y, transform.position.z);
+                casaFloresta.position = new Vector3(0f, transform.position.y, transform.position.z);
             }
         }
 	}

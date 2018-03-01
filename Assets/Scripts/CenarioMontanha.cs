@@ -24,7 +24,7 @@ public class CenarioMontanha : MonoBehaviour
 
         if (destinoAlcancado)
         {
-            transform.Translate(Vector3.left * 0.05f);
+            transform.Translate(Vector3.left * 0.1f);
 
             if (transform.position.x < -4f && gameObject != null)
             {

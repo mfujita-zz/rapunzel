@@ -23,3 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RapunzelUnhas.unity
     guid: c46439319605cff4bb2386fe2ac88ebe
+  - enabled: 1
+    path: Assets/Scenes/Floresta.unity
+    guid: d148bb82b6ee59244bfdf5ea99a0ad1f
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: 6015f73c1735da34daeba8c377035608
