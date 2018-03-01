@@ -9,6 +9,7 @@ public class Rapunzel : MonoBehaviour
     public bool podePular;
 
     public GameObject[] desabilitaScriptCenarios;
+    public static bool destinoAlcancado = false;
 
 	void Start () 
     {
@@ -34,6 +35,15 @@ public class Rapunzel : MonoBehaviour
                 transform.position = new Vector3(-10.3f, transform.position.y, transform.position.z);
             }
         }
+
+        if (Cenario.destinoAlcancado)
+        {
+            transform.Translate(Vector3.left * 0.4f);
+            if (transform.position.x < -9.5f)
+            {
+                transform.position = new Vector3(-9.5f, transform.position.y, transform.position.z);
+            }
+        }
 	}
 
     void FixedUpdate()
@@ -46,16 +56,16 @@ public class Rapunzel : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D jogador)
-    {
-        if (jogador.gameObject.name.Equals("rodape"))
+    { 
+        if (jogador.gameObject.name.Equals("rodape") || jogador.gameObject.name.Contains("plataforma"))
         {
             podePular = true;
         }
 
-        if (jogador.gameObject.name.Contains("plataforma"))
-        {
-            podePular = true;
-        }
+//        if ()
+//        {
+//            podePular = true;
+//        }
 
         if (jogador.gameObject.name.Contains("rato") || jogador.gameObject.name.Contains("bruxa") || jogador.gameObject.name.Contains("fogo"))
         {

@@ -7,7 +7,10 @@ public class BarraProgresso : MonoBehaviour
 {
     public GameObject rapunzel;
     public Slider progresso;
+    public GameObject Slider_fundo;
     public GameObject[] inimigos = new GameObject[10];
+    public static bool destinoAlcancado = false;
+
 
 	void Update () 
     {        
@@ -36,5 +39,10 @@ public class BarraProgresso : MonoBehaviour
         if (inimigos[0] == null && inimigos[1] == null && inimigos[2] == null && inimigos[3] == null && inimigos[4] == null &&
             inimigos[5] == null && inimigos[6] == null && inimigos[7] == null && inimigos[8] == null && inimigos[9] == null)
             progresso.value = 1.0f;
+
+        if (destinoAlcancado)
+        {
+            Destroy(Slider_fundo);
+        }
 	}
 }

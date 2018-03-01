@@ -11,6 +11,8 @@ public class PlataformaInimigos : MonoBehaviour
         if (bruxa10 == null)
         {
             Cenario.destinoAlcancado = true;
+            CenarioMontanha.destinoAlcancado = true;
+            BarraProgresso.destinoAlcancado = true;
         }
     }
 }

@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4394094114527598}
   - component: {fileID: 212732442000015606}
-  - component: {fileID: 61415849441175178}
   - component: {fileID: 114197403160988306}
+  - component: {fileID: 61985461625243186}
   m_Layer: 0
   m_Name: rato
   m_TagString: Untagged
@@ -36,13 +36,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1371793617519920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.045, z: 0}
+  m_LocalPosition: {x: 120, y: -4.045, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61415849441175178
+--- !u!61 &61985461625243186
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -54,7 +54,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.12905586}
+  m_Offset: {x: 0, y: 0.031556606}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -65,7 +65,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.25, y: 1.9918883}
+  m_Size: {x: 2.25, y: 1.6586695}
   m_EdgeRadius: 0
 --- !u!114 &114197403160988306
 MonoBehaviour:
@@ -82,6 +82,7 @@ MonoBehaviour:
   rato: {fileID: 1371793617519920}
   fogo: {fileID: 1117465282870464, guid: 4d8f5fc999bd32a4dba3c5467bfbea74, type: 2}
   bruxa: {fileID: 1769235771328560, guid: 51b9351a76bc8a24ba29ae460c608508, type: 2}
+  bruxa10: {fileID: 0}
 --- !u!212 &212732442000015606
 SpriteRenderer:
   m_ObjectHideFlags: 1

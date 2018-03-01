@@ -25,14 +25,18 @@ public class Cenario : MonoBehaviour
             transform.position = new Vector3(18.7f, transform.position.y, transform.position.z);
         }
 
-
         if (destinoAlcancado)
         {
             transform.Translate(Vector3.left * .05f);
-            casaFloresta.Translate(Vector3.left * .05f);
-            if (casaFloresta.transform.position.x < 3.35f)
+            if (transform.position.x < -20f && gameObject != null)
             {
-                casaFloresta.position = new Vector3(3.35f, transform.position.y, transform.position.z);
+                Destroy(gameObject);
+            }
+
+            casaFloresta.Translate(Vector3.left * .05f);
+            if (casaFloresta.transform.position.x < 2f)
+            {
+                casaFloresta.position = new Vector3(2f, transform.position.y, transform.position.z);
             }
         }
 	}
