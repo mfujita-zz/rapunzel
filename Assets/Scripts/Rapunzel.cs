@@ -36,18 +36,6 @@ public class Rapunzel : MonoBehaviour
                 transform.position = new Vector3(-10.3f, transform.position.y, transform.position.z);
             }
         }
-
-        //if (Cenario.destinoAlcancado)
-//        if (destinoAlcancado)
-//        {
-//            transform.Translate(Vector3.left);
-//            if (transform.position.x <= -9.5f)
-//            {
-//                
-//                //if (transform.position.x == -9.5f)
-//                    destinoAlcancado = false;
-//            }
-//        }
 	}
 
     void FixedUpdate()

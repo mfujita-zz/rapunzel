@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class UnhasBotoes : MonoBehaviour 
+public class Transicao2_3 : MonoBehaviour 
 {
-    public void Proximafase()
+    public void IniciaCenaFloresta()
     {
-        SceneManager.LoadScene("Transicao2_3");
+        SceneManager.LoadScene("Floresta");
     }
 }

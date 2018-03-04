@@ -8,10 +8,12 @@ public class Transicao1_2 : MonoBehaviour
 	public GameObject quarto;
     public GameObject salao;
     public Text aviso;
+    public GameObject botao;
 
     void Start()
     {
         StartCoroutine(Aguarda1s());
+        botao.gameObject.SetActive(false);
     }
 
     IEnumerator Aguarda1s() 
@@ -43,6 +45,7 @@ public class Transicao1_2 : MonoBehaviour
             if (salao.transform.position.x > -5.91f)
             {
                 salao.transform.position = new Vector3(-5.91f, -1.1f, 0);
+                botao.gameObject.SetActive(true);
             }
         }
 	}
