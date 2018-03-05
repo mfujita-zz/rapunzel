@@ -2146,6 +2146,7 @@ GameObject:
   - component: {fileID: 1032296100}
   - component: {fileID: 1032296099}
   - component: {fileID: 1032296098}
+  - component: {fileID: 1032296101}
   m_Layer: 5
   m_Name: JogarNovamente
   m_TagString: Untagged
@@ -2210,7 +2211,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1032296099}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1032296101}
+        m_MethodName: ReiniciarFloresta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1032296099
@@ -2246,6 +2258,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1032296096}
+--- !u!114 &1032296101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1032296096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e40172ff95d3fce49857989b27245edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1059300585
 Prefab:
   m_ObjectHideFlags: 0

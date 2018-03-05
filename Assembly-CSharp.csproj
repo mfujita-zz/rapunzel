@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\Controle.cs" />
      <Compile Include="Assets\Scripts\Final.cs" />
      <Compile Include="Assets\Scripts\FinalBotoes.cs" />
+     <Compile Include="Assets\Scripts\FlorestaBotao.cs" />
      <Compile Include="Assets\Scripts\Gerenciador.cs" />
      <Compile Include="Assets\Scripts\IluminacaoMontanha.cs" />
      <Compile Include="Assets\Scripts\InimigoMovimento.cs" />
