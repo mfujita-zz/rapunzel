@@ -8,14 +8,16 @@ public class Rapunzel : MonoBehaviour
     public float speed = 6.0F;
     public Rigidbody2D rb;
     public bool podePular;
-
+    public bool travaMovimento = true;
     public GameObject[] desabilitaScriptCenarios;
     public static bool destinoAlcancado = false;
+    public GameObject bruxa10;
+    public GameObject elementosUI;
 
 	void Start () 
     {
         podePular = true;
-        //desabilitaScript = GameObject.Find("Cenario");
+        elementosUI.SetActive(false);
 	}	
 
 	void Update () 
@@ -57,6 +59,9 @@ public class Rapunzel : MonoBehaviour
         if (jogador.gameObject.name.Contains("rato") || jogador.gameObject.name.Contains("bruxa") || jogador.gameObject.name.Contains("fogo"))
         {
             Time.timeScale = 0f;
+            elementosUI.SetActive(true);
+            GameObject musica = GameObject.Find("AudioSource");
+            GetComponent<AudioSource>().Stop();
         }
 
         if (jogador.gameObject.name.Equals("casaFloresta"))
@@ -67,6 +72,6 @@ public class Rapunzel : MonoBehaviour
 
     public void ReposionaAoTerminarTrajeto()
     {
-        transform.position = new Vector3(-9.5f, transform.position.y, transform.position.z);
+        transform.position = new Vector3(-9.5f, -3.4f, transform.position.z);
     }
 }

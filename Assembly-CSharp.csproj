@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BarraProgresso.cs" />
      <Compile Include="Assets\Scripts\BotaoCor.cs" />
+     <Compile Include="Assets\Scripts\Bruxa.cs" />
      <Compile Include="Assets\Scripts\Cenario.cs" />
      <Compile Include="Assets\Scripts\CenarioMontanha.cs" />
      <Compile Include="Assets\Scripts\Controle.cs" />
