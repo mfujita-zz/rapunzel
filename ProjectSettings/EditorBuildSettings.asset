@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 6624a6c97ea41b24a88335ac05b2d755
   - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 8c099e9e2b1c0b84dbeeca9ae68b9539
+  - enabled: 1
     path: Assets/Scenes/FugaInstrucao.unity
     guid: 56129dcfc8be20242a37dc98dc3cf4ae
   - enabled: 1

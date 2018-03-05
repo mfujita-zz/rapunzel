@@ -21,5 +21,11 @@ public class InimigoMovimento : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (bruxa.transform.position.x < 11.4f)
+        {
+            GameObject risada = GameObject.Find("AudioSource");
+            GetComponent<AudioSource>().Play();
+        }
 	}
 }

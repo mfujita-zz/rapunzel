@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\Gerenciador.cs" />
      <Compile Include="Assets\Scripts\IluminacaoMontanha.cs" />
      <Compile Include="Assets\Scripts\InimigoMovimento.cs" />
+     <Compile Include="Assets\Scripts\IntroParaCreditos.cs" />
      <Compile Include="Assets\Scripts\Lupa.cs" />
      <Compile Include="Assets\Scripts\MudancaCorUnhas.cs" />
      <Compile Include="Assets\Scripts\Pincel.cs" />

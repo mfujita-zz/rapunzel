@@ -23,5 +23,9 @@ public class Gerenciador : MonoBehaviour
         {
             SceneManager.LoadScene("RapunzelUnhas");
         }
+        else if (cena.name.Equals("Creditos"))
+        {
+            SceneManager.LoadScene("Intro");
+        }
 	}
 }

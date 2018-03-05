@@ -15,6 +15,7 @@ public class FlorestaBotao : MonoBehaviour
     public void ReiniciarFloresta()
     {        
 //        SceneManager.LoadScene(nomeCena.ToString(), LoadSceneMode.Single);
-        SceneManager.LoadScene("Transicao2_3");
+        SceneManager.LoadScene("Floresta");
+        Time.timeScale = 1;
     }
 }
