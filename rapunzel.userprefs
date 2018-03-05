@@ -1,14 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UnhasBotoes.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Unhas.cs">
     <Files>
       <File FileName="Assets\Scripts\UnhasBotoes.cs" Line="11" Column="6" />
-      <File FileName="Assets\Scripts\Unhas.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Transicao1_2.cs" Line="24" Column="17" />
+      <File FileName="Assets\Scripts\Unhas.cs" Line="11" Column="24" />
+      <File FileName="Assets\Scripts\Transicao1_2.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Transicao2_3.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Bruxa.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\FlorestaBotao.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\IntroParaCreditos.cs" Line="10" Column="44" />
+      <File FileName="Assets\Scripts\IntroParaCreditos.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

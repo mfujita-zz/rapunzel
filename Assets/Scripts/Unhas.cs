@@ -80,91 +80,91 @@ public class Unhas : MonoBehaviour
         }
 
         if (Input.GetMouseButton(0) &&
-            (transform.position.x > 1.4 && transform.position.y > -3.7) &&
-            (transform.position.x > 1.4 && transform.position.y < -2.7) &&
-            (transform.position.x < 1.8 && transform.position.y > -3.7) &&
-            (transform.position.x < 1.8 && transform.position.y < -2.7))
+            (transform.position.x > (-0.54f-.5f) && transform.position.y > (-3.35-.5f)) &&
+            (transform.position.x > (-0.54f-.5f) && transform.position.y < (-3.35+.5f)) &&
+            (transform.position.x < (-0.54f+.5f) && transform.position.y > (-3.35-.5f)) &&
+            (transform.position.x < (-0.54f+.5f) && transform.position.y < (-3.35+.5f)))
         {            
             direitaMinimo.SetActive(true);
         }
 
         if (Input.GetMouseButtonDown(0) &&
-            (transform.position.x > 2.4 && transform.position.y > -4.3) &&
-            (transform.position.x > 2.4 && transform.position.y < -3.7) &&
-            (transform.position.x < 2.9 && transform.position.y > -4.3) &&
-            (transform.position.x < 2.9 && transform.position.y < -3.7))
+            (transform.position.x > (0.46f-.5f) && transform.position.y > (-3.39f-0.5f)) &&
+            (transform.position.x > (0.46f-.5f) && transform.position.y < (-3.39f+0.5f)) &&
+            (transform.position.x < (0.46f+.5f) && transform.position.y > (-3.39f-0.5f)) &&
+            (transform.position.x < (0.46f+.5f) && transform.position.y < (-3.39f+0.5f)))
         {
             direitaAnular.SetActive(true);
         }
 
         if (Input.GetMouseButtonDown(0) &&
-            (transform.position.x > 3.7 && transform.position.y > -4.3) &&
-            (transform.position.x > 3.7 && transform.position.y < -3.8) &&
-            (transform.position.x < 3.9 && transform.position.y > -4.3) &&
-            (transform.position.x < 3.9 && transform.position.y < -3.8))
+            (transform.position.x > (1.64f-0.5f) && transform.position.y > (-4.3f-0.5f)) &&
+            (transform.position.x > (1.64f-0.5f) && transform.position.y < (-4.3f+0.5f)) &&
+            (transform.position.x < (1.64f+0.5f) && transform.position.y > (-4.3f-0.5f)) &&
+            (transform.position.x < (1.64f+0.5f) && transform.position.y < (-4.3f+0.5f)))
         {
             direitaMedio.SetActive(true);
         }
 
         if (Input.GetMouseButtonDown(0) &&
-            (transform.position.x > 5.0 && transform.position.y > -4.3) &&
-            (transform.position.x > 5.0 && transform.position.y < -3.8) &&
-            (transform.position.x < 5.2 && transform.position.y > -4.3) &&
-            (transform.position.x < 5.2 && transform.position.y < -3.8))
+            (transform.position.x > (2.84f-0.5f) && transform.position.y > (-4f-0.5f)) &&
+            (transform.position.x > (2.84f-0.5f) && transform.position.y < (-4f+0.5f)) &&
+            (transform.position.x < (2.84f+0.5f) && transform.position.y > (-4f-0.5f)) &&
+            (transform.position.x < (2.84f+0.5f) && transform.position.y < (-4f+0.5f)))
         {
             direitaIndicador.SetActive(true);
         }
 
         if (Input.GetMouseButtonDown(0) &&
-            (transform.position.x > 5.5 && transform.position.y > -2.4) &&
-            (transform.position.x > 5.5 && transform.position.y < -2.0) &&
-            (transform.position.x < 5.9 && transform.position.y > -2.4) &&
-            (transform.position.x < 5.9 && transform.position.y < -2.0))
+            (transform.position.x > (3.46f-0.5f) && transform.position.y > (-2.29-0.5f)) &&
+            (transform.position.x > (3.46f-0.5f) && transform.position.y < (-2.29+0.5f)) &&
+            (transform.position.x < (3.46f+0.5f) && transform.position.y > (-2.29-0.5f)) &&
+            (transform.position.x < (3.46f+0.5f) && transform.position.y < (-2.29+0.5f)))
         {
             direitaPolegar.SetActive(true);
         }
 
         if (Input.GetMouseButtonDown(0) &&
-            (transform.position.x > 5.9 && transform.position.y > -2.4) &&
-            (transform.position.x > 5.9 && transform.position.y < -2.0) &&
-            (transform.position.x < 6.3 && transform.position.y > -2.4) &&
-            (transform.position.x < 6.3 && transform.position.y < -2.0))
+            (transform.position.x > (3.39f-0.5f) && transform.position.y > (-2.29-0.5f)) &&
+            (transform.position.x > (3.39f-0.5f) && transform.position.y < (-2.29+0.5f)) &&
+            (transform.position.x < (3.39f+0.5f) && transform.position.y > (-2.29-0.5f)) &&
+            (transform.position.x < (3.39f+0.5f) && transform.position.y < (-2.29+0.5f)))
         {
             esquerdaPolegar.SetActive(true);
         }
 
         if (Input.GetMouseButtonDown(0) &&
-            (transform.position.x > 7.4 && transform.position.y > -3.8) &&
-            (transform.position.x > 7.4 && transform.position.y < -3.4) &&
-            (transform.position.x < 7.7 && transform.position.y > -3.8) &&
-            (transform.position.x < 7.7 && transform.position.y < -3.4))
+            (transform.position.x > (5.39f-0.5f) && transform.position.y > (-3.67f-0.5f)) &&
+            (transform.position.x > (5.39f-0.5f) && transform.position.y < (-3.67f+0.5f)) &&
+            (transform.position.x < (5.39f+0.5f) && transform.position.y > (-3.67f-0.5f)) &&
+            (transform.position.x < (5.39f+0.5f) && transform.position.y < (-3.67f+0.5f)))
         {
             esquerdaIndicador.SetActive(true);
         }
 
         if (Input.GetMouseButtonDown(0) &&
-            (transform.position.x > 8.8 && transform.position.y > -3.5) &&
-            (transform.position.x > 8.8 && transform.position.y < -2.9) &&
-            (transform.position.x < 9.0 && transform.position.y > -3.5) &&
-            (transform.position.x < 9.0 && transform.position.y < -2.9))
+            (transform.position.x > (6.74f-0.5f) && transform.position.y > (-3.41f-0.5f)) &&
+            (transform.position.x > (6.74f-0.5f) && transform.position.y < (-3.41f+0.5f)) &&
+            (transform.position.x < (6.74f+0.5f) && transform.position.y > (-3.41f-0.5f)) &&
+            (transform.position.x < (6.74f+0.5f) && transform.position.y < (-3.41f+0.5f)))
         {
             esquerdaMedio.SetActive(true);
         }
 
         if (Input.GetMouseButtonDown(0) &&
-            (transform.position.x > 9.5 && transform.position.y > -2.8) &&
-            (transform.position.x > 9.5 && transform.position.y < -2.3) &&
-            (transform.position.x < 9.8 && transform.position.y > -2.8) &&
-            (transform.position.x < 9.8 && transform.position.y < -2.3))
+            (transform.position.x > (7.5f-0.5f) && transform.position.y > (-2.74-0.5f)) &&
+            (transform.position.x > (7.5f-0.5f) && transform.position.y < (-2.74+0.5f)) &&
+            (transform.position.x < (7.5f+0.5f) && transform.position.y > (-2.74-0.5f)) &&
+            (transform.position.x < (7.5f+0.5f) && transform.position.y < (-2.74+0.5f)))
         {
             esquerdaAnular.SetActive(true);
         }
 
         if (Input.GetMouseButtonDown(0) &&
-            (transform.position.x > 9.8 && transform.position.y > -1.8) &&
-            (transform.position.x > 9.8 && transform.position.y < -1.4) &&
-            (transform.position.x < 10.1 && transform.position.y > -1.8) &&
-            (transform.position.x < 10.1 && transform.position.y < -1.4))
+            (transform.position.x > (7.7f-0.5f) && transform.position.y > (-1.7f-0.5f)) &&
+            (transform.position.x > (7.7f-0.5f) && transform.position.y < (-1.7f+0.5f)) &&
+            (transform.position.x < (7.7f+0.5f) && transform.position.y > (-1.7f-0.5f)) &&
+            (transform.position.x < (7.7f+0.5f) && transform.position.y < (-1.7f+0.5f)))
         {
             esquerdaMinimo.SetActive(true);
         }
