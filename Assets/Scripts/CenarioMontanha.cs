@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CenarioMontanha : MonoBehaviour 
 {
-    public static bool destinoAlcancado = false;
+    public static bool destinoAlcancado;
 
     void Start () 
     {
-
+        destinoAlcancado = false;
 	}	
 	
 	void Update ()

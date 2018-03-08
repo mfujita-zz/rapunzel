@@ -18,7 +18,7 @@ public class PlataformaInimigos : MonoBehaviour
         {
             Cenario.destinoAlcancado = true;
             CenarioMontanha.destinoAlcancado = true;
-            BarraProgresso.destinoAlcancado = true;
+//            BarraProgresso.destinoAlcancado = true;
 
             rapunzel.GetComponent<Rapunzel>().ReposionaAoTerminarTrajeto();
             this.enabled = false;

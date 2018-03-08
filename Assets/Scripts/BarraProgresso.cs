@@ -40,9 +40,9 @@ public class BarraProgresso : MonoBehaviour
             inimigos[5] == null && inimigos[6] == null && inimigos[7] == null && inimigos[8] == null && inimigos[9] == null)
             progresso.value = 1.0f;
 
-        if (destinoAlcancado)
-        {
-            Destroy(Slider_fundo);
-        }
+//        if (destinoAlcancado)
+//        {
+//            Destroy(Slider_fundo);
+//        }
 	}
 }

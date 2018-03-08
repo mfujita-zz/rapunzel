@@ -5,11 +5,11 @@ using UnityEngine;
 public class Cenario : MonoBehaviour 
 {
     public Transform casaFloresta;
-    public static bool destinoAlcancado = false;
+    public static bool destinoAlcancado;
 	
 	void Start () 
     {
-        
+        destinoAlcancado = false;
 	}	
 	
 	void Update () 
